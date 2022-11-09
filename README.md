@@ -1,0 +1,2 @@
+# CPH2409
+CPH2409 OnePlus Nord CE 2 Lite 5G
