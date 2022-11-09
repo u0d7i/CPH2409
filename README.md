@@ -4,6 +4,7 @@ CPH2409 OnePlus Nord CE 2 Lite 5G
 [Device info @gsmarena](https://www.gsmarena.com/oneplus_nord_ce_2_lite_5g-11344.php)
 
 ## Unlock
+NB: all the user data is wiped during this procerure
 ```
 $ adb reboot bootloader
 $ fastboot flashing unlock
