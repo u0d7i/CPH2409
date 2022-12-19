@@ -18,9 +18,11 @@ $ fastboot flashing unlock
 
 As per [here](https://forum.xda-developers.com/t/rooting-oneplus-nord-2-ce-lite.4500297/):
 
+- Make sure your system is up to date, and update version is the same as your system.
 - On your phone, install [Oxygen Updater](https://github.com/oxygen-updater/oxygen-updater/releases) apk,
-launch it, in "Settings" make sure "Update method" is "Stable (full)" and download update. It's placed as
-a zip file in sdcard root directory (/sdcard/)
+launch it, it should say "Your system is up to date".
+- In "Settings" (gear icon), enable "Advanced mode" and make sure "Update method" is "Stable (full)". From "Update", download update.
+It's placed as a zip file in sdcard root directory (/sdcard/)
 - Download update zip from the phone to your PC:
 ```
 $ adb shell 'ls /sdcard/*.zip'
