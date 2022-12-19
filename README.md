@@ -14,6 +14,7 @@ $ fastboot flashing unlock
 * https://github.com/oxygen-updater/oxygen-updater/releases
 * https://github.com/ssut/payload-dumper-go/releases
 * https://github.com/topjohnwu/Magisk/releases
+* https://oxygenos.oneplus.net/OPLocalUpdate_For_Android13.apk
 
 As per [here](https://forum.xda-developers.com/t/rooting-oneplus-nord-2-ce-lite.4500297/):
 
@@ -63,3 +64,16 @@ $ fastboot flash boot magisk_patched-25200_oQWxs.img
 $ fastboot flash vbmeta vbmeta.img
 $ fastboot reboot
 ```
+
+### Surviving OTA updata
+If you perform automatic OTA update, you will loose your root permissions. You can allways regain ones repeating
+the procedure above with the new update download. To prevent loosing root permissions during OTA update:
+- Don't use automatic update
+- Download full update zip with Oxygen Updater as per above.
+- Instal [OP LocalUpdate](https://oxygenos.oneplus.net/OPLocalUpdate_For_Android13.apk) apk from OnePlus, it will apper
+in "All Apps" as "System Update". Launch it, press gear, and select downloaded update zip file. Press "Install Now" to proceed.
+- After it finishes - don't reboot yet.
+- Launch Magisk, click Magisk "Install", in "Method", choose "Install to inactive Slot (After OTA)",
+and press "LETS'S GO".
+- Press "Reboot" in Magisk
+
