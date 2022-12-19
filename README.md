@@ -49,7 +49,7 @@ $ ./payload-dumper-go -o . -p boot,vbmeta 12547fdf7dc849fabe93282f5c870992.zip
 $ adb push boot.img /sdcard/Download/
 ```
 - Launch Magisk on your phone, click Magisk "Install", in "Method", choose "Select and Patch a File",
-and press "LETS'S GO".
+and press "LET'S GO".
 - Download resulting patched boot image from the phone to PC:
 ```
 $ adb shell ls /sdcard/Download/magisk_patched*
@@ -74,6 +74,6 @@ the procedure above with the new update download. To prevent loosing root permis
 in "All Apps" as "System Update". Launch it, press gear, and select downloaded update zip file. Press "Install Now" to proceed.
 - After it finishes - don't reboot yet.
 - Launch Magisk, click Magisk "Install", in "Method", choose "Install to inactive Slot (After OTA)",
-and press "LETS'S GO".
+and press "LET'S GO".
 - Press "Reboot" in Magisk
 
