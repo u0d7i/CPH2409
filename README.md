@@ -35,7 +35,7 @@ https://github.com/ssut/payload-dumper-go/releases/download/1.2.2/payload-dumper
 
 $ curl -LJO https://github.com/ssut/payload-dumper-go/releases/download/1.2.2/payload-dumper-go_1.2.2_linux_amd64.tar.gz
 
-$ tar -xf payload-dumper-go_1.2.2_linux_amd64.tar.gz payload-dumper-g
+$ tar -xf payload-dumper-go_1.2.2_linux_amd64.tar.gz payload-dumper-go
 ```
 - Extract 'boot' and 'vbmeta' partition images from the update zip:
 ```
@@ -56,7 +56,7 @@ $ adb shell ls /sdcard/Download/magisk_patched*
 $ adb pull /sdcard/Download/magisk_patched-25200_oQWxs.img
 ...
 ```
-- Flash resulting patched boot and vbmeta images (don't reboot in between):
+- Flash patched 'boot' image and then original 'vbmeta' image (don't reboot in between):
 ```
 $ adb reboot bootloader
 $ fastboot flash boot magisk_patched-25200_oQWxs.img
