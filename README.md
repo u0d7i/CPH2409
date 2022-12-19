@@ -65,7 +65,7 @@ $ fastboot flash vbmeta vbmeta.img
 $ fastboot reboot
 ```
 
-### Surviving OTA updata
+### Surviving OTA update
 If you perform automatic OTA update, you will loose your root permissions. You can allways regain ones repeating
 the procedure above with the new update download. To prevent loosing root permissions during OTA update:
 - Don't use automatic update
